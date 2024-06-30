@@ -66,9 +66,7 @@ a:hover {
     padding-bottom: 2em;
 }
 
-.about-container img {
-    padding: 5rem;
-}
+
 .about-text {
     display: block;
     margin-top: auto;
@@ -77,6 +75,14 @@ a:hover {
 
 .project-container {
     max-width: 950px;
+}
+.graphics-container {
+    max-width: 950px;
+}
+
+.graphics-container img {
+    border-radius: .5em;
+    margin-bottom: .5em;
 }
 
 .project-container h2 {
@@ -279,6 +285,7 @@ a .button {
         width: 200px;
         padding: 1rem;
     }
+    
 }
 @media screen and (min-width: 780px){
     .card__container{
@@ -289,6 +296,10 @@ a .button {
         grid-template-columns: repeat(2, 1fr);
         column-gap: 1.5rem;
     }
+    .about-img{
+        padding: 1em;
+    }
+
 }
 @media screen and (min-width: 1120px){
     .card__container{
@@ -311,8 +322,9 @@ a .button {
 /* About Page */
 
 .about-img {
-    border-radius: 6.5em;
+    border-radius: 2em;
     width: 100%;
+    max-width: 375px;
 }
   
 
