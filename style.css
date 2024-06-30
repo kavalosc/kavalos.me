@@ -16,8 +16,18 @@ body {
     background-color: var(--background-color);
 }
 
+#pinkbg {
+    background-color: lightpink;
+}
+
 h1 {
     font-size: 4em !important;
+}
+
+h5 {
+    font-weight: normal !important;
+    font-size: 18px !important;
+    color: #7d7e88;
 }
 
 a {
@@ -29,12 +39,26 @@ a:hover {
     color: var(--green-color) !important;
 }
 
+/* Containers */
 .main-container {
     display: grid;
     place-items: center;
     margin-inline: 1.5rem;
-    max-width: 1092px;
+    max-width: 950px;
+    line-height: 2 !important;
+
 }
+
+.container {
+    max-width: 950px;
+    padding-left: 3.5rem !important;
+    padding-right: 3.5rem !important;
+}
+
+.container h1 {
+    font-size:40px !important;
+}
+
 .about-container {
     display: grid;
     row-gap: 3.5rem;
@@ -50,9 +74,62 @@ a:hover {
     margin-top: auto;
     margin-bottom: auto;
 }
+
+.project-container {
+    max-width: 950px;
+}
+
+.project-container h2 {
+    text-align: center !important;
+}
+
+.project-container h3 {
+    margin-bottom: 1em;
+}
+
+.project-container img {
+    border-radius: 2em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
+.project-container .button {
+    text-align: center;
+    margin: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    color: #FAF9F6 !important;
+}
+
+.project-container .button:hover {
+    color: #5FC736 !important;
+}
+.caption {
+    text-align: center;
+    color:#7d7e88;
+}
+
+.col-md-1 {
+    text-align: center;
+}
+
+#problem {
+    background-color:#e7e9ea;
+    padding: 1em;
+    border-radius: .5em;
+    margin-top:0 !important;
+}
+#rooted-solution {
+    background-color:#EDF5DD;
+    padding: 1em;
+    border-radius: .5em;
+    margin-top: 0 !important;
+}
+
 .row {
-    margin-bottom: 2em !important;
-    margin-top: 2em !important;
+    margin-bottom: 5rem !important;
+    margin-top: 5rem !important;
 }
 
 a .button {
@@ -115,7 +192,7 @@ a .button {
 }
 
 .card__data {
-    width: 280px;
+    width: 100px;
     background-color: white;
     padding: 1.5rem 2rem;
     box-shadow: 0 8px 24px lightgrey;
@@ -199,7 +276,7 @@ a .button {
         margin-inline: 1rem;
     }
     .card__data{
-        width: 250px;
+        width: 200px;
         padding: 1rem;
     }
 }
@@ -222,7 +299,7 @@ a .button {
         object-fit:fill;
     }
     .card__data{
-        width: 316px;
+        width: 275px;
         padding-inline: 2.5rem;
     }
 }
