@@ -185,6 +185,7 @@ a .button {
 .card__container {
     display: grid;
     row-gap: 3.5rem;
+    column-gap: 1.5rem;
 }
 
 .card__article {
@@ -207,6 +208,7 @@ a .button {
     bottom: -9rem;
     left: 0;
     right: 0;
+    margin: .5em;
     margin-inline: auto;
     opacity: 0;
     transition: opacity 1s 1s;
@@ -277,31 +279,19 @@ a .button {
 }
 
 /* Breakpoints for Card */
-@media screen and (max-width: 340px) {
+@media screen and (max-width: 780px) {
     .main-container {
         margin-inline: 1rem;
     }
     .card__data{
-        width: 200px;
-        padding: 1rem;
+        padding: 1.5rem;
+        width: 270px;
     }
     
 }
-@media screen and (min-width: 780px){
-    .card__container{
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 1.5rem;
-    }
-    .about-container {
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 1.5rem;
-    }
-    .about-img{
-        padding: 1em;
-    }
 
-}
-@media screen and (min-width: 1120px){
+
+@media screen and (min-width: 780px){
     .card__container{
         grid-template-columns: repeat(3, 1fr);
     }
@@ -312,6 +302,7 @@ a .button {
     .card__data{
         width: 275px;
         padding-inline: 2.5rem;
+
     }
 }
 
